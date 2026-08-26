@@ -22,8 +22,9 @@ thing runs with a single `./gradlew bootRun` and is fully exercised by the test 
 
 See also: [`REQUIREMENTS.md`](REQUIREMENTS.md) for the functional/non-functional requirements
 this system was built against, [`CLASS_DIAGRAM.md`](CLASS_DIAGRAM.md) for a Mermaid diagram of
-how every class relates to the others, and [`API.md`](API.md) for the full request/response
-object reference for every endpoint.
+how every class relates to the others, [`API.md`](API.md) for the full request/response object
+reference for every endpoint, and [`DB_SCHEMA.md`](DB_SCHEMA.md) for the database tables and an
+ER diagram.
 
 ## Running it
 
