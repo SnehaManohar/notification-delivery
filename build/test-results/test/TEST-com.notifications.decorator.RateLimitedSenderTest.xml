@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.decorator.RateLimitedSenderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.315Z" hostname="Snehas-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="throwsAndNeverCallsDelegate_whenUserBucketRejects()" classname="com.notifications.decorator.RateLimitedSenderTest" time="0.014"/>
+  <testcase name="forwardsToDelegate_whenBothBucketsAllow()" classname="com.notifications.decorator.RateLimitedSenderTest" time="0.0"/>
+  <testcase name="throwsAndNeverCallsDelegate_whenChannelBucketRejects()" classname="com.notifications.decorator.RateLimitedSenderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.router.PreferenceBasedNotificationRouterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.466Z" hostname="Snehas-MacBook-Pro.local" time="0.026">
+  <properties/>
+  <testcase name="returnsDefaultChannel_whenNoPreferenceStored()" classname="com.notifications.router.PreferenceBasedNotificationRouterTest" time="0.025"/>
+  <testcase name="returnsDefaultChannel_whenPreferenceHasNoChannelsSelected()" classname="com.notifications.router.PreferenceBasedNotificationRouterTest" time="0.001"/>
+  <testcase name="returnsConfiguredChannels_whenPreferenceExists()" classname="com.notifications.router.PreferenceBasedNotificationRouterTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

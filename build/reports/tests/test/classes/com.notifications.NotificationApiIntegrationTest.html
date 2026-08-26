@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - NotificationApiIntegrationTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>NotificationApiIntegrationTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.notifications.html">com.notifications</a> &gt; NotificationApiIntegrationTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">8</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.741s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">createNotification_returns400_whenUserIdMissing()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createNotification_routesOnlyToPreferredChannel()</td>
+<td class="success">0.118s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createNotification_routesToAllPreferredChannels()</td>
+<td class="success">0.134s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">createNotification_withNoPreference_deliversToDefaultEmailChannel()</td>
+<td class="success">0.119s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getNotification_returns404_forUnknownId()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">partiallyDelivered_whenOneChannelFailsPermanentlyAndAnotherSucceeds()</td>
+<td class="success">0.119s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">preferences_areReadableAfterBeingSet()</td>
+<td class="success">0.010s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">retryableFailureThatClearsWithinBudget_eventuallyDelivers()</td>
+<td class="success">0.229s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre id="class-stdout">2026-08-18T22:43:24.525+05:30  INFO 4528 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.notifications.NotificationApiIntegrationTest]: NotificationApiIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-08-18T22:43:24.526+05:30  INFO 4528 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.notifications.NotificationSystemApplication for test class com.notifications.NotificationApiIntegrationTest
+2026-08-18T22:43:24.537+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=7a5b22fa-7be8-4a50-aa81-0a4a93d6379d notificationId=b408dafb-9334-44b5-bcf8-2ee6aa312da9 channel=EMAIL attempt=0
+2026-08-18T22:43:24.537+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=7a5b22fa-7be8-4a50-aa81-0a4a93d6379d channel=EMAIL providerMessageId=email-6959eb58-8b6f-471d-8f87-1e5cf6953914
+2026-08-18T22:43:24.651+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=e9e27c92-0faf-404b-98a1-45df6699dcca notificationId=d9976091-bf02-45b0-882b-87e09d516365 channel=EMAIL attempt=0
+2026-08-18T22:43:24.651+05:30  WARN 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivery attempt failed deliveryId=e9e27c92-0faf-404b-98a1-45df6699dcca channel=EMAIL attempt=0 reason=Email provider timeout (simulated, priorAttempts=0)
+2026-08-18T22:43:24.782+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=e9e27c92-0faf-404b-98a1-45df6699dcca notificationId=d9976091-bf02-45b0-882b-87e09d516365 channel=EMAIL attempt=1
+2026-08-18T22:43:24.783+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=e9e27c92-0faf-404b-98a1-45df6699dcca channel=EMAIL providerMessageId=email-4a9aa9aa-0d88-4651-b326-2f15fcfea397
+2026-08-18T22:43:24.898+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=32578782-f35e-4acc-838a-d3077edf77ab notificationId=65270927-c85c-4b38-827d-887c13d9ec28 channel=PUSH attempt=0
+2026-08-18T22:43:24.898+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=32578782-f35e-4acc-838a-d3077edf77ab channel=PUSH providerMessageId=push-4dc99263-653d-4e02-952d-9e124a247419
+2026-08-18T22:43:24.898+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=17352147-786b-4aad-91ea-bad286fad5a4 notificationId=65270927-c85c-4b38-827d-887c13d9ec28 channel=EMAIL attempt=0
+2026-08-18T22:43:24.898+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=17352147-786b-4aad-91ea-bad286fad5a4 channel=EMAIL providerMessageId=email-d3880073-74bf-40c1-8e18-c9757933466f
+2026-08-18T22:43:24.899+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=76dd293c-3c04-4c60-a20c-0ad9a9250523 notificationId=65270927-c85c-4b38-827d-887c13d9ec28 channel=SMS attempt=0
+2026-08-18T22:43:24.899+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=76dd293c-3c04-4c60-a20c-0ad9a9250523 channel=SMS providerMessageId=sms-7e11ae06-d9c7-4693-83f0-2ae5979e2131
+2026-08-18T22:43:25.020+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=dd973e10-555c-4531-a70f-92204e2d036c notificationId=148db18a-4a7a-48a8-984c-08d844dd0f5b channel=PUSH attempt=0
+2026-08-18T22:43:25.020+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=dd973e10-555c-4531-a70f-92204e2d036c channel=PUSH providerMessageId=push-21629900-e642-4426-a528-bf515cfb71b4
+2026-08-18T22:43:25.159+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=b3973dd7-907b-4fb8-845b-9ac50bb803dc notificationId=0fa763ca-e16a-4cc6-88a3-2491f31fa484 channel=EMAIL attempt=0
+2026-08-18T22:43:25.159+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=b3973dd7-907b-4fb8-845b-9ac50bb803dc channel=EMAIL providerMessageId=email-2dbee0b6-bce4-49b7-a050-8295451a54c1
+2026-08-18T22:43:25.159+05:30  INFO 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=ae7ab3f4-e961-4daa-b1ae-32edd96d18f3 notificationId=0fa763ca-e16a-4cc6-88a3-2491f31fa484 channel=SMS attempt=0
+2026-08-18T22:43:25.159+05:30  WARN 4528 --- [delivery-worker] c.notifications.decorator.LoggingSender  : Delivery attempt failed deliveryId=ae7ab3f4-e961-4daa-b1ae-32edd96d18f3 channel=SMS attempt=0 reason=SMS provider rejected the request: invalid recipient
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stdout">Copy</button>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.1.0</a> at 18 Aug 2026, 10:43:25 pm</p>
+</div>
+</div>
+</body>
+</html>

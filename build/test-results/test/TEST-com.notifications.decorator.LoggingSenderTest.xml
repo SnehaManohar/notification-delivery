@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.decorator.LoggingSenderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.272Z" hostname="Snehas-MacBook-Pro.local" time="0.042">
+  <properties/>
+  <testcase name="passesThroughSuccessResult_unchanged()" classname="com.notifications.decorator.LoggingSenderTest" time="0.041"/>
+  <testcase name="propagatesException_unchanged()" classname="com.notifications.decorator.LoggingSenderTest" time="0.001"/>
+  <system-out><![CDATA[2026-08-18T22:43:25.311+05:30  INFO 4528 --- [    Test worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=d1 notificationId=n1 channel=EMAIL attempt=0
+2026-08-18T22:43:25.312+05:30  INFO 4528 --- [    Test worker] c.notifications.decorator.LoggingSender  : Delivered deliveryId=d1 channel=EMAIL providerMessageId=id-1
+2026-08-18T22:43:25.314+05:30  INFO 4528 --- [    Test worker] c.notifications.decorator.LoggingSender  : Dispatching delivery deliveryId=d1 notificationId=n1 channel=EMAIL attempt=0
+2026-08-18T22:43:25.314+05:30  WARN 4528 --- [    Test worker] c.notifications.decorator.LoggingSender  : Delivery attempt failed deliveryId=d1 channel=EMAIL attempt=0 reason=boom
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

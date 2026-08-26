@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.retry.ExponentialBackoffRetryPolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.464Z" hostname="Snehas-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="fixedBackoff_whenMultiplierIsOne()" classname="com.notifications.retry.ExponentialBackoffRetryPolicyTest" time="0.001"/>
+  <testcase name="nextBackoff_growsExponentiallyThenCaps()" classname="com.notifications.retry.ExponentialBackoffRetryPolicyTest" time="0.0"/>
+  <testcase name="shouldRetry_true_whenRetryableAndUnderBudget()" classname="com.notifications.retry.ExponentialBackoffRetryPolicyTest" time="0.0"/>
+  <testcase name="shouldRetry_false_onceMaxRetriesReached()" classname="com.notifications.retry.ExponentialBackoffRetryPolicyTest" time="0.0"/>
+  <testcase name="shouldRetry_false_forNonRetryableFailure_regardlessOfAttempt()" classname="com.notifications.retry.ExponentialBackoffRetryPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.dispatch.DeliveryDispatchServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.331Z" hostname="Snehas-MacBook-Pro.local" time="0.106">
+  <properties/>
+  <testcase name="isNoOp_whenDeliveryAlreadyTerminal()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.095"/>
+  <testcase name="isNoOp_whenDeliveryNotFound()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.001"/>
+  <testcase name="schedulesRetry_whenRetryableFailureAndPolicyAllows()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.003"/>
+  <testcase name="marksDelivered_onSuccessfulSend()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.001"/>
+  <testcase name="movesToFailed_andRecordsDlq_onNonRetryableFailure()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.002"/>
+  <testcase name="reschedulesWithoutConsumingAttempt_whenRateLimited()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.002"/>
+  <testcase name="exhaustsToDlq_whenRetryableFailureButPolicyDenies()" classname="com.notifications.dispatch.DeliveryDispatchServiceTest" time="0.001"/>
+  <system-out><![CDATA[2026-08-18T22:43:25.428+05:30  WARN 4528 --- [    Test worker] c.n.dispatch.DeliveryDispatchService     : No delivery found for id=missing, skipping
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,48 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:notifications-test;DB_CLOSE_DELAY=-1
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+notification:
+  dispatch:
+    worker-count: 4
+    reconciliation-interval-millis: 100
+    rate-limit-retry-delay-millis: 300
+    stuck-pending-threshold-millis: 1000
+
+  rate-limit:
+    user:
+      capacity: 20
+      refill-per-second: 5
+    channel:
+      capacity: 50
+      refill-per-second: 15
+
+  retry:
+    default-policy:
+      max-retries: 3
+      initial-backoff-millis: 100
+      multiplier: 2.0
+      max-backoff-millis: 1000
+    channels:
+      EMAIL:
+        max-retries: 3
+        initial-backoff-millis: 100
+        multiplier: 2.0
+        max-backoff-millis: 1000
+      SMS:
+        max-retries: 3
+        initial-backoff-millis: 100
+        multiplier: 2.0
+        max-backoff-millis: 1000
+      PUSH:
+        max-retries: 3
+        initial-backoff-millis: 100
+        multiplier: 1.0
+        max-backoff-millis: 100
+
+logging:
+  level:
+    com.notifications: INFO

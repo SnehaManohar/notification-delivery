@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.notifications.sender.EmailSenderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-08-18T17:13:25.493Z" hostname="Snehas-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="succeeds_whenNoSimulateKeyPresent()" classname="com.notifications.sender.EmailSenderTest" time="0.0"/>
+  <testcase name="failTwice_failsFirstTwoAttempts_thenSucceeds()" classname="com.notifications.sender.EmailSenderTest" time="0.0"/>
+  <testcase name="throwsNonRetryable_forPermanentFailure()" classname="com.notifications.sender.EmailSenderTest" time="0.001"/>
+  <testcase name="succeeds_whenSimulateIsExplicitSuccess()" classname="com.notifications.sender.EmailSenderTest" time="0.0"/>
+  <testcase name="throwsRetryable_forRetryableFailure_regardlessOfAttemptCount()" classname="com.notifications.sender.EmailSenderTest" time="0.0"/>
+  <testcase name="failOnce_failsFirstAttempt_thenSucceeds()" classname="com.notifications.sender.EmailSenderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
